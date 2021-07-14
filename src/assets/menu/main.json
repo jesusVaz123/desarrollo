@@ -1,0 +1,12 @@
+{
+  "title": "Rechazos Emisor Amex-OptBlue",
+  "menu": [
+
+
+    {
+      "label": "Revisión de Rechazos Nacional",
+      "path": "revisionrechazosnacional",
+      "more": true
+    }
+     ]
+}

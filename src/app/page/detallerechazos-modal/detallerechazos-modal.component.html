@@ -1,0 +1,284 @@
+<div class="user-container">
+  <div class="container">
+    <div>
+      <nav>
+        <a routerLink="/rechazos-nacional" routerLinkActive="active">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+        </a>
+      </nav>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<div class="user-container" >  
+    <mat-dialog-content class="mat-typography">
+      <h2 layout="row" layout-align="center center">Rechazo</h2>
+      <table class="example-full-width" [formGroup]="detalleRechazo"  class="mat-elevation-z8" >
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>CodigodeRechazo:</mat-label><input matInput formControlName="CodigodeRechazo"
+                id="CodigodeRechazo" name="CodigodeRechazo">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>numerodenegocio:</mat-label><input matInput formControlName="numerodenegocio"
+                id="numerodenegocio" name="  numerodenegocio">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>NombreNegocio :</mat-label><input matInput formControlName="NombreNegocio" id="NombreNegocio "
+                name=" NombreNegocio">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>NumerodeCuenta:</mat-label><input matInput formControlName="NumerodeCuenta" id="NumerodeCuenta"
+                name="  NumerodeCuenta">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>TipoProducto :</mat-label><input matInput formControlName="TipoProducto" id="TipoProducto  "
+                name=" TipoProducto">
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>NumerodeAutorizacion :</mat-label><input matInput formControlName="NumerodeAutorizacion"
+                id="NumerodeAutorizacion" name=" NumerodeAutorizacion">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>TipodeTransaccion :</mat-label><input matInput formControlName="TipodeTransaccion"
+                id="TipodeTransaccion" name="TipodeTransaccion">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>BancoAdquirente:</mat-label><input matInput formControlName="BancoAdquirente"
+                id="BancoAdquirente" name="  BancoAdquirente">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>BancoEmisor :</mat-label><input matInput formControlName="BancoEmisor" id="BancoEmisor  "
+                name="BancoEmisor">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>GIRO :</mat-label><input matInput formControlName="GIRO" id="GIRO  " name="GIRO">
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>NumeroTerminal:</mat-label><input matInput formControlName="NumeroTerminal" id="NumeroTerminal"
+                name="NumeroTerminal">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>FechaOrigen :</mat-label><input matInput formControlName="FechaOrigen" id="FechaOrigen  "
+                name="FechaOrigen">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>HoraOrigen :</mat-label><input matInput formControlName="HoraOrigen" id="HoraOrigen"
+                name="HoraOrigen">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>TC:</mat-label><input matInput formControlName="TC" id="TC" name="TC">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>TipodeOperacion:</mat-label><input matInput formControlName="TipodeOperacion"
+                id="TipodeOperacion" name="  TipodeOperacion">
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>PEM :</mat-label><input matInput formControlName="PEM" id="PEM" name="PEM">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>RedLogica:</mat-label><input matInput formControlName="RedLogica" id="RedLogica"
+                name="RedLogica">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>DFTCaptura :</mat-label><input matInput formControlName="DFTCaptura" id="DFTCaptura"
+                name="DFTCaptura">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>CodigodeRespuesta :</mat-label><input matInput formControlName="CodigodeRespuesta"
+                id="CodigodeRespuesta" name="CodigodeRespuesta">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Importe:</mat-label><input matInput formControlName="Importe" id="Importe " name="Importe">
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Referencia :</mat-label><input matInput formControlName="Referencia" id="Referencia"
+                name="Referencia">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>ClavePD:</mat-label><input matInput formControlName="ClavePD" id="ClavePD " name="  ClavePD">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>BanderaCashBak:</mat-label><input matInput formControlName="BanderaCashBak" id="BanderaCashBak"
+                name="  BanderaCashBak">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>ImporteCashBak:</mat-label><input matInput formControlName="ImporteCashBak" id="ImporteCashBak"
+                name="ImporteCashBak">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>MedioComercio :</mat-label><input matInput formControlName="MedioComercio" id="MedioComercio "
+                name=" MedioComercio">
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>RRN :</mat-label><input matInput formControlName="RRN" id="RRN" name="RRN">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>CAVV :</mat-label><input matInput formControlName="CAVV" id="CAVV  " name="CAVV">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>ID3DS :</mat-label><input matInput formControlName="ID3DS" id="ID3DS  " name=" ID3DS">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>ECI :</mat-label><input matInput formControlName="ECI" id="ECI" name="ECI">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>MediodeAcceso :</mat-label><input matInput formControlName="MediodeAcceso" id="MediodeAcceso "
+                name=" MediodeAcceso">
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>CapTerminal :</mat-label><input matInput formControlName="CapTerminal" id="CapTerminal  "
+                name="CapTerminal">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Destino:</mat-label><input matInput formControlName="Destino" id="Destino " name="  Destino">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>CVV2 :</mat-label><input matInput formControlName="CVV2" id="CVV2  " name="CVV2">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Lote :</mat-label><input matInput formControlName="Lote" id="Lote  " name="Lote">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>RegLlave:</mat-label><input matInput formControlName="RegLlave" id="RegLlave"
+                name="  RegLlave">
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+    </mat-dialog-content>  
+</div>
+
+<div class="user-container">
+  <mat-dialog-content class="mat-typography">
+    <h2 layout="row" layout-align="center center">Fuente Papel</h2>
+    
+    <mat-form-field class="filter">
+      <input matInput (keyup)="applyFilter($event.target.value)"  placeholder="Filtrar Campos">
+    </mat-form-field>
+    <table mat-table [dataSource]="dataFuentePapel" matSort class="mat-elevation-z8"  id="dataFuentePapel">
+
+      <ng-container matColumnDef="Comparar">
+        <th mat-header-cell *matHeaderCellDef> Comparar </th>
+        <td mat-cell *matCellDef="let element">
+          <button mat-raised-button color="primary" >Comparar</button>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="codregistro">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Código de tipo de registro.</th>
+        <td mat-cell *matCellDef="let element"> {{element.Codigotiporegistro}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="vNoCuenta">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Número de cuenta </th>
+        <td mat-cell *matCellDef="let element"> {{element.NumeroCuenta}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="vNumNeg">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Número de Negocio </th>
+        <td mat-cell *matCellDef="let element"> {{element.NumeroNegocio}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="tipotrans">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Tipo de Transacción </th>
+        <td mat-cell *matCellDef="let element"> {{element.tipotransaccion}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="importe">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Importe </th>
+        <td mat-cell *matCellDef="let element"> {{element.Importetransaccion}} </td>
+      </ng-container>
+      <ng-container matColumnDef="referencia">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Número de Autorización </th>
+        <td mat-cell *matCellDef="let element"> {{element.ReferenciaBanco}} </td>
+      </ng-container>
+
+
+      <tr mat-header-row *matHeaderRowDef="archivoftepColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: archivoftepColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  </mat-dialog-content>
+</div>
